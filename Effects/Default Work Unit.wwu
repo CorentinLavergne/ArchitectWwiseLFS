@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}" SchemaVersion="94">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Filtre_Toit_Pluie" ID="{394E95D3-F1F4-4179-9956-2E2EA1EABA9B}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand3" Type="Real32" Value="51"/>
+						<Property Name="GainBand3" Type="Real32" Value="-8"/>
+						<Property Name="OnOffBand1" Type="bool" Value="False"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

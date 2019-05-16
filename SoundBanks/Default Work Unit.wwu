@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F074E42F-FA4D-4B51-A611-2D72239A1017}" SchemaVersion="94">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{F074E42F-FA4D-4B51-A611-2D72239A1017}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="MainSoundBank" ID="{BF425816-1590-4044-9A4D-BB0848C74102}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Bassin" ID="{28A2C97C-59FF-4041-80B9-AD16C75E8A8E}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Pluie_Ext" ID="{094423CA-333A-4117-BDBA-90B76AC4D152}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Acsenseur01" ID="{5125D081-1AB5-42B4-BF91-774073C4D82C}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Cascade" ID="{6D9CCFD6-2854-435B-B779-800FE8637618}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Music" ID="{252E95FD-591F-43C5-85D7-98F0FC89613D}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Lumiere_Eteint" ID="{9F25C3BE-4006-4413-9CFB-3E5537AECE30}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Lumiere_Gresille" ID="{E7BAFE23-37A1-4493-96DB-9337DC24A21B}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Tp_Module" ID="{468D2C72-33A9-453C-B626-07358478DE09}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Poser_Module" ID="{32778B5D-E0B0-461D-BC51-14BCA9132666}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Acsenseur04" ID="{6971CC9A-C339-4662-9E00-5D0DDF7CE6D5}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Prendre_Module" ID="{806E352E-ACA0-4725-8AE2-0585A8241CA1}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Acsenseur02" ID="{F47003A4-F283-474A-AC79-9B760E97D8CB}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Acsenseur03" ID="{BBEF6D13-6528-4828-8557-D61ABEE94B0D}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Plante" ID="{518EDDC7-4CEC-487C-BECA-CC800E331203}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Acsenseur00" ID="{C7E8C5FF-D208-4AA7-8378-FAE5693223AC}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Pluie_Toit" ID="{ACA39ABD-9A3D-4B64-B607-9EAC92DF5343}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_AcsenseurTOP" ID="{30751231-EE6A-4BFF-894D-D7BC1D71E85B}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Ville" ID="{50865FFF-B5A7-4CAE-B709-E3DD9BFDE06B}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Lumiere_Allume" ID="{A819110F-9FE9-4DD4-9F1C-BD0C1617CFB2}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Chemin_Lumiere" ID="{E90724CD-D049-4F49-9CBE-0CA7C7E3CDB2}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Wrong" ID="{F7848A90-B50F-4FA6-AE65-5CC720D320C1}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

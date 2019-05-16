@@ -1,0 +1,83 @@
+Event	ID	Name			Wwise Object Path	Notes
+	33491128	Play_Cascade			\Default Work Unit\Play_Cascade	
+	92581801	Play_Wrong			\Default Work Unit\Play_Wrong	
+	147443677	Play_Pluie_Ext			\Default Work Unit\Play_Pluie_Ext	
+	258901810	Play_Bassin			\Default Work Unit\Play_Bassin	
+	922352807	Play_Prendre_Module			\Default Work Unit\Play_Prendre_Module	
+	1015332243	Play_Lumiere_Eteint			\Default Work Unit\Play_Lumiere_Eteint	
+	1544534530	Play_Chemin_Lumiere			\Default Work Unit\Play_Chemin_Lumiere	
+	1589065314	Play_AcsenseurTOP			\Default Work Unit\Play_AcsenseurTOP	
+	1614550972	Play_Poser_Module			\Default Work Unit\Play_Poser_Module	
+	1950492193	Play_Acsenseur04			\Default Work Unit\Play_Acsenseur04	
+	1950492196	Play_Acsenseur01			\Default Work Unit\Play_Acsenseur01	
+	1950492197	Play_Acsenseur00			\Default Work Unit\Play_Acsenseur00	
+	1950492198	Play_Acsenseur03			\Default Work Unit\Play_Acsenseur03	
+	1950492199	Play_Acsenseur02			\Default Work Unit\Play_Acsenseur02	
+	2211386577	Play_Tp_Module			\Default Work Unit\Play_Tp_Module	
+	2800623694	Play_Ville			\Default Work Unit\Play_Ville	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3548864740	Play_Lumiere_Allume			\Default Work Unit\Play_Lumiere_Allume	
+	3892494798	Play_Plante			\Default Work Unit\Play_Plante	
+	4120605449	Play_Lumiere_Gresille			\Default Work Unit\Play_Lumiere_Gresille	
+	4269863952	Play_Pluie_Toit			\Default Work Unit\Play_Pluie_Toit	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1992488372	State_Music			\Default Work Unit\State_Music	
+
+State	ID	Name	State Group			Notes
+	0	None	State_Music			
+	984691642	Ingame	State_Music			
+	2607556080	Menu	State_Music			
+
+Effect plug-ins	ID	Name	Type				Notes
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	2731461810	Filtre_Toit_Pluie	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	14445283	TP MODULE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\TP MODULE_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TP MODULE		768064
+	18659226	VILLE HAUTEUR-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\VILLE HAUTEUR-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambient\Ville\VilleHauteur\VILLE HAUTEUR-001		1536064
+	57007878	LUMIERE ETEINTE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\LUMIERE ETEINTE _10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LUMIERE ETEINTE		192064
+	80041516	TAP ASCENSEUR-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\TAP ASCENSEUR-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage04\TAP ASCENSEUR-005		144064
+	101783780	LUMIERE ALLUME02	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\LUMIERE ALLUME02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lumière\LUMIERE ALLUME02		192064
+	145130390	PLANTE-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLANTE-002_BD47BF3B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Plante\PLANTE-002		184408
+	185844298	CRAN ASCENSEUR-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CRAN ASCENSEUR-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage04\CRAN ASCENSEUR-005		4838
+	203234394	LUMIERE ALLUME04	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\LUMIERE ALLUME04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lumière\LUMIERE ALLUME04		192064
+	214254575	POSER MODULE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\POSER MODULE_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Modules\POSER MODULE		96064
+	226267322	CHEMIN LUMIERE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CHEMIN LUMIERE _ECC695BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Chemin\CHEMIN LUMIERE		1210060
+	241742901	CRAN ASCENSEUR-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CRAN ASCENSEUR-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurTop\CRAN ASCENSEUR-006		4838
+	250424197	LUMIERE ALLUME01	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\LUMIERE ALLUME01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lumière\LUMIERE ALLUME01		192064
+	252144129	VILLE HAUTEUR-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\VILLE HAUTEUR-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambient\Ville\VilleHauteur\RandomVille\VILLE HAUTEUR-003		1536064
+	309309954	VILLE HAUTEUR-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\VILLE HAUTEUR-001_C02DFAA6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambient\Ville\VilleHauteur\RandomVille\VILLE HAUTEUR-001		1310960
+	322857602	TAP ASCENSEUR-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\TAP ASCENSEUR-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage0\TAP ASCENSEUR-001		144064
+	347552919	ArchitectMenu	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\ArchitectMenu_D79FB2B7.wem		\Interactive Music Hierarchy\MusicWorkUnit\Navigation\Menu\ArchitectMenu\ArchitectMenu		14400064
+	353331368	BASSIN	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\BASSIN_F1A4A3AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\EAU\BASSIN		3216128
+	358440743	PLANTE-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLANTE-008_542E6462.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Plante\PLANTE-008		177788
+	378695272	LUMIERE GRESILLE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\LUMIERE GRESILLE_E2060F62.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Lumière présence\LUMIERE GRESILLE		763090
+	387665162	CASCADE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CASCADE_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\EAU\CASCADE		1561280
+	392504115	PLANTE-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLANTE-007_DD620659.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Plante\PLANTE-007		121874
+	478295504	PRENDRE MODULE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PRENDRE MODULE_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Modules\PRENDRE MODULE		96064
+	484737208	Pont2	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\Pont2_D79FB2B7.wem		\Interactive Music Hierarchy\MusicWorkUnit\Navigation\Ingame\Pont2\Pont2		11808064
+	497783994	TAP ASCENSEUR-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\TAP ASCENSEUR-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage01\TAP ASCENSEUR-002		144064
+	505030638	PLANTE-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLANTE-006_9796FDC1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Plante\PLANTE-006		189788
+	599553525	CLOCHE ASCENSEUR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CLOCHE ASCENSEUR_5DB1AACC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurTop\CLOCHE ASCENSEUR		341582
+	604604208	VILLE HAUTEUR-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\VILLE HAUTEUR-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambient\Ville\VilleHauteur\RandomVille\VILLE HAUTEUR-002		1536064
+	644075696	WRONG	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\WRONG_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\WRONG		96064
+	644112283	PLUIE TOIT	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLUIE TOIT_4BB68365.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambient\Pluie\Pluie Toit\PLUIE TOIT		3072128
+	759334917	PLANTE-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLANTE-004_9F0F89CC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Plante\PLANTE-004		162288
+	803706115	LUMIERE ALLUME03	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\LUMIERE ALLUME03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lumière\LUMIERE ALLUME03		192064
+	818451757	TAP ASCENSEUR-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\TAP ASCENSEUR-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurTop\TAP ASCENSEUR-006		138602
+	835025486	CRAN ASCENSEUR-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CRAN ASCENSEUR-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage02\CRAN ASCENSEUR-003		4838
+	855398897	VILLE HAUTEUR-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\VILLE HAUTEUR-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambient\Ville\VilleHauteur\RandomVille\VILLE HAUTEUR-004		1536064
+	869406376	PLANTE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLANTE-001_08770628.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Plante\PLANTE-001		185444
+	878087835	MusiqueInGame	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\MusiqueInGame_D79FB2B7.wem		\Interactive Music Hierarchy\MusicWorkUnit\Navigation\Ingame\MusiqueInGame\MusiqueInGame		50432064
+	905312553	Pont1	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\Pont1_D79FB2B7.wem		\Interactive Music Hierarchy\MusicWorkUnit\Navigation\Ingame\Pont1\Pont1		18720064
+	927569739	CRAN ASCENSEUR-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CRAN ASCENSEUR-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage03\CRAN ASCENSEUR-004		4838
+	938468556	TAP ASCENSEUR-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\TAP ASCENSEUR-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage02\TAP ASCENSEUR-003		144064
+	953000917	VILLE HAUTEUR GRAVE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\VILLE HAUTEUR GRAVE_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambient\Ville\VILLE HAUTEUR GRAVE		4235664
+	956053814	PLANTE-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLANTE-005_620BE066.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Plante\PLANTE-005		184202
+	961589483	TAP ASCENSEUR-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\TAP ASCENSEUR-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage03\TAP ASCENSEUR-004		144064
+	974358417	CRAN ASCENSEUR-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CRAN ASCENSEUR-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage01\CRAN ASCENSEUR-002		4838
+	995128658	PLANTE-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLANTE-003_C6A1ED0E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Plante\PLANTE-003		167586
+	1022744147	PLUIE EXTERIEUR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\PLUIE EXTERIEUR_C557F641.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambient\Pluie\Pluie Ext\PLUIE EXTERIEUR		3072128
+	1035093068	CRAN ASCENSEUR-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\CRAN ASCENSEUR-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ascenseur\AscenseurEtage0\CRAN ASCENSEUR-001		17184
+
