@@ -1,0 +1,6 @@
+.cache/*
+*.akd
+*.prof
+*.wsettings
+*.validationcache
+*.wem
