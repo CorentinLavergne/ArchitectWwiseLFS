@@ -59,6 +59,17 @@
 				<RandomSequenceContainer Name="Lumière" ID="{CB43BD35-6763-496D-8AD9-8F345E50FB2D}" ShortID="372837715">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -219,6 +230,9 @@
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Bassin_Attenuation" ID="{6C8EDD36-1B91-4E6A-A208-C2E2FA04980D}" WorkUnitID="{88FA0E69-E7A0-474B-8E6F-09D5A4811D10}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 										</Reference>
@@ -242,12 +256,7 @@
 										<ActiveSource Name="BASSIN" ID="{04AA02EF-803B-4E0C-BA3F-7FBDA6B130AB}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="CASCADE" ID="{F7DBE6FF-C46E-45A5-9835-C31336368B07}" ShortID="842552769">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
-									</PropertyList>
+								<BlendContainer Name="Cascade" ID="{DD3C57DE-9F69-4A58-8AED-1A2BE5C43E88}" ShortID="565419105">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -257,21 +266,66 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CASCADE" ID="{1A022757-F3A7-49A2-A1D7-DE0A49B3BCDD}" ShortID="387665162">
+										<Sound Name="CASCADE_01" ID="{F7DBE6FF-C46E-45A5-9835-C31336368B07}" ShortID="842552769">
 											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="1.5"/>
-												<Property Name="LoopBegin" Type="Real64" Value="1.43700287356322"/>
-												<Property Name="LoopEnd" Type="Real64" Value="15.8070316091954"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>CASCADE.wav</AudioFile>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CASCADE" ID="{1A022757-F3A7-49A2-A1D7-DE0A49B3BCDD}" ShortID="387665162">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1.5"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.43700287356322"/>
+														<Property Name="LoopEnd" Type="Real64" Value="15.8070316091954"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CASCADE.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CASCADE" ID="{1A022757-F3A7-49A2-A1D7-DE0A49B3BCDD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="CASCADE" ID="{1A022757-F3A7-49A2-A1D7-DE0A49B3BCDD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<BlendTrackList>
+										<BlendTrack Name="Volume_Cascade" ID="{6F0B7482-B314-4E1E-96FB-38EA8EC5CC3F}" ShortID="41943299">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{D335DF6F-3ABA-4390-8070-371384906C03}" ShortID="245195532"/>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}" WorkUnitID="{222EF79A-FFD7-49D9-98F3-57DB066464F6}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="CASCADE_01" ID="{F7DBE6FF-C46E-45A5-9835-C31336368B07}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>30.1047120418848</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Chemin" ID="{4C7CD1EC-1174-4A5B-9C82-9D7E7E17F05D}" ShortID="654506614">
@@ -358,10 +412,13 @@
 											<ChildrenList>
 												<Sound Name="PLUIE EXTERIEUR" ID="{B210970B-2501-4D0A-ACCE-CEC05890101A}" ShortID="468986559">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="61"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-16</Value>
+																<Value>-21</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -409,18 +466,20 @@
 												<Sound Name="PLUIE TOIT" ID="{E3C32A7B-926C-47F1-A434-E4E0B8B310C4}" ShortID="1001487948">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-24</Value>
+																<Value>-12</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pluie_Attenuation" ID="{F87B3F57-9607-4457-846A-FBBA3A61C772}" WorkUnitID="{88FA0E69-E7A0-474B-8E6F-09D5A4811D10}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 														</Reference>
@@ -442,6 +501,7 @@
 													</ChildrenList>
 													<PositioningInfo>
 														<Panner Name="" ID="{64EBFD7B-30C3-4A76-86AB-D3B53975AC55}"/>
+														<Position Name="" ID="{5CB8B73A-2E21-4099-B4BC-2D12DC85C232}"/>
 													</PositioningInfo>
 													<ActiveSourceList>
 														<ActiveSource Name="PLUIE TOIT" ID="{CD393052-8CDE-47A3-9162-52A32D2BA559}" Platform="Linked"/>
@@ -470,7 +530,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -500,7 +560,7 @@
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -660,6 +720,17 @@
 				<Sound Name="LUMIERE ETEINTE" ID="{54A1B274-22F5-445E-916F-D8B024E04942}" ShortID="872947683">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -905,9 +976,12 @@
 							<ChildrenList>
 								<Sound Name="POSER MODULE" ID="{D637F6F2-6DD5-421E-8BE5-BE24844F77BC}" ShortID="1043419551">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -931,9 +1005,12 @@
 								</Sound>
 								<Sound Name="PRENDRE MODULE" ID="{266AEF6A-7758-4941-95BF-4FD56F7497BB}" ShortID="737881582">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-19</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -960,6 +1037,8 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Ascenseur" ID="{7ACE6D00-E048-42D5-8B6E-B9DF76A2B876}" ShortID="189654348">
+					<Comment>A METTRE EN DRY
+</Comment>
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>

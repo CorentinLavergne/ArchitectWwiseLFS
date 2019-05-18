@@ -11,19 +11,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}">
+							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="Pluie" ID="{EA8A5147-9BA5-4E1C-83C0-D345AA59BAAF}">
-									<ReferenceList>
-										<Reference Name="Effect0">
-											<Custom>
-												<Effect Name="Auro_Headphone_(Custom)" ID="{7F5B56A5-0AA9-4CE7-824C-352C6454570F}" ShortID="2824553" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3">
-													<PropertyList>
-														<Property Name="Reverb" Type="bool" Value="False"/>
-													</PropertyList>
-												</Effect>
-											</Custom>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
 								</Bus>
 							</ChildrenList>
 						</Bus>
@@ -32,13 +23,14 @@
 								<Property Name="MaxDuckVolume" Type="Real64" Value="-14"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 							</PropertyList>
+							<ReferenceList/>
 							<DuckingList>
 								<DuckItem>
 									<BusRef Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}"/>
 									<DuckingParam>
 										<Volume>-6</Volume>
-										<FadeInTime>2.5</FadeInTime>
-										<FadeOutTime>1.5</FadeOutTime>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
 										<FadeCurve>FadeLinear</FadeCurve>
 									</DuckingParam>
 								</DuckItem>

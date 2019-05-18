@@ -10,28 +10,48 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Poser_Module" ID="{32778B5D-E0B0-461D-BC51-14BCA9132666}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ville" ID="{50865FFF-B5A7-4CAE-B709-E3DD9BFDE06B}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="PLUIE TOIT" ID="{E3C32A7B-926C-47F1-A434-E4E0B8B310C4}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Music" ID="{252E95FD-591F-43C5-85D7-98F0FC89613D}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<ObjectRef Name="Play_Prendre_Module" ID="{806E352E-ACA0-4725-8AE2-0585A8241CA1}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Pluie_Toit" ID="{ACA39ABD-9A3D-4B64-B607-9EAC92DF5343}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="VilleHauteur" ID="{4A8FA563-DE28-49FC-88E1-4AF02DCAB543}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Bassin" ID="{28A2C97C-59FF-4041-80B9-AD16C75E8A8E}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
-							<Position X="2" Y="1"/>
+							<ObjectRef Name="Play_Pluie_Ext" ID="{094423CA-333A-4117-BDBA-90B76AC4D152}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="VILLE HAUTEUR GRAVE" ID="{3818DA3C-9CAF-4B33-B876-68BEACFD9228}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Music" ID="{252E95FD-591F-43C5-85D7-98F0FC89613D}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Cascade" ID="{6D9CCFD6-2854-435B-B779-800FE8637618}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
-							<Position X="3" Y="1"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Bassin" ID="{28A2C97C-59FF-4041-80B9-AD16C75E8A8E}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<Position X="5" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -40,12 +60,20 @@
 							<Value>6</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}"/>
+							<Value>1.15354056867294E-311</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Playback_Rate" ID="{28387EE3-C13A-4316-B9C3-DB5C521624AF}"/>
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
 							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SideChainAmbianceRTPC" ID="{E2B12C6D-5CB2-44FB-B114-9AF64DB93D4F}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RPM" ID="{9112AA05-F577-44FD-9F4E-4424158129E6}"/>

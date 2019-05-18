@@ -22,7 +22,7 @@
 				<Event Id="1950492198" Name="Play_Acsenseur03" ObjectPath="\Events\Default Work Unit\Play_Acsenseur03"/>
 				<Event Id="1950492193" Name="Play_Acsenseur04" ObjectPath="\Events\Default Work Unit\Play_Acsenseur04"/>
 				<Event Id="1589065314" Name="Play_AcsenseurTOP" ObjectPath="\Events\Default Work Unit\Play_AcsenseurTOP"/>
-				<Event Id="258901810" Name="Play_Bassin" ObjectPath="\Events\Default Work Unit\Play_Bassin"/>
+				<Event Id="258901810" Name="Play_Bassin" ObjectPath="\Events\Default Work Unit\Play_Bassin" MaxAttenuation="1.000000"/>
 				<Event Id="33491128" Name="Play_Cascade" ObjectPath="\Events\Default Work Unit\Play_Cascade"/>
 				<Event Id="1544534530" Name="Play_Chemin_Lumiere" ObjectPath="\Events\Default Work Unit\Play_Chemin_Lumiere"/>
 				<Event Id="3548864740" Name="Play_Lumiere_Allume" ObjectPath="\Events\Default Work Unit\Play_Lumiere_Allume"/>
@@ -31,7 +31,7 @@
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="3892494798" Name="Play_Plante" ObjectPath="\Events\Default Work Unit\Play_Plante"/>
 				<Event Id="147443677" Name="Play_Pluie_Ext" ObjectPath="\Events\Default Work Unit\Play_Pluie_Ext"/>
-				<Event Id="4269863952" Name="Play_Pluie_Toit" ObjectPath="\Events\Default Work Unit\Play_Pluie_Toit"/>
+				<Event Id="4269863952" Name="Play_Pluie_Toit" ObjectPath="\Events\Default Work Unit\Play_Pluie_Toit" MaxAttenuation="100.000000"/>
 				<Event Id="1614550972" Name="Play_Poser_Module" ObjectPath="\Events\Default Work Unit\Play_Poser_Module"/>
 				<Event Id="922352807" Name="Play_Prendre_Module" ObjectPath="\Events\Default Work Unit\Play_Prendre_Module"/>
 				<Event Id="2211386577" Name="Play_Tp_Module" ObjectPath="\Events\Default Work Unit\Play_Tp_Module"/>

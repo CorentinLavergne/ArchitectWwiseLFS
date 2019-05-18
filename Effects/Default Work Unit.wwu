@@ -11,6 +11,15 @@
 						<Property Name="OnOffBand2" Type="bool" Value="False"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="SideChainAmbiance" ID="{08640DB3-34D2-413F-BC7B-C8BDCDECF841}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Hold" Type="Real32" Value="3.05"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="4.42"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="SideChainAmbianceRTPC" ID="{E2B12C6D-5CB2-44FB-B114-9AF64DB93D4F}"/>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
