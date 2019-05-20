@@ -81,9 +81,15 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="LUMIERE ALLUME01" ID="{CE751201-949D-4517-BCAD-313EF7D60808}" ShortID="261704443">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Filtre_Lum_Allumee" ID="{5A8970C5-F78A-48EE-9D22-1EA10A8EAA68}" WorkUnitID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
@@ -726,6 +732,18 @@
 								<Value>1</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5E4CF367-3CCC-4CAB-A981-00180ADB6762}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="76"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
@@ -735,6 +753,9 @@
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="Filtre_Lum_Eteinte" ID="{A8EE48FB-A01B-403F-AB31-12C3DF4141FB}" WorkUnitID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>

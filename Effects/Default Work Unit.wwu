@@ -20,6 +20,17 @@
 	<GameParameter Name="SideChainAmbianceRTPC" ID="{E2B12C6D-5CB2-44FB-B114-9AF64DB93D4F}"/>
 </PluginData>
 				</Effect>
+				<Effect Name="Filtre_Lum_Eteinte" ID="{A8EE48FB-A01B-403F-AB31-12C3DF4141FB}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand3" Type="Real32" Value="8967"/>
+						<Property Name="GainBand3" Type="Real32" Value="-9"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Filtre_Lum_Allumee" ID="{5A8970C5-F78A-48EE-9D22-1EA10A8EAA68}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="GainBand3" Type="Real32" Value="-7.5"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

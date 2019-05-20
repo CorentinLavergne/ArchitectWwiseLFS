@@ -540,7 +540,6 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
@@ -745,6 +744,7 @@
 								<MusicPlaylistItem Name="" ID="{777984EF-F3C5-4A32-B026-B7A9B005A0B6}" ShortID="349868846">
 									<PropertyList>
 										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlayMode" Type="int16" Value="1"/>
 									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{60E793AD-E294-47FA-A5AC-5950C21D30EB}" ShortID="324031338">

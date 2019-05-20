@@ -34,7 +34,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	1852184699	Filtre_Lum_Eteinte	Wwise Parametric EQ			
 	2731461810	Filtre_Toit_Pluie	Wwise Parametric EQ			
+	3375630030	Filtre_Lum_Allumee	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14445283	TP MODULE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Architect\git\ArchitectWwise\.cache\Windows\SFX\TP MODULE_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TP MODULE		768064
