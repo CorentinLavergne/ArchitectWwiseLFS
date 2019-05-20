@@ -46,6 +46,10 @@
 							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Ascenseur" ID="{5775C340-AB44-424A-B19C-FABE6BA71F90}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Cascade" ID="{6D9CCFD6-2854-435B-B779-800FE8637618}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
 							<Position X="5" Y="0"/>
 						</Module>
@@ -61,7 +65,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}"/>
-							<Value>1.15354056867294E-311</Value>
+							<Value>76</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Playback_Rate" ID="{28387EE3-C13A-4316-B9C3-DB5C521624AF}"/>
@@ -104,6 +108,10 @@
 							<Value>6</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Elevator_RTPC" ID="{B716C71B-DE2A-4CED-B579-2EDD9F8DC4B4}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
 							<Value>75</Value>
 						</RTPCValue>
@@ -115,7 +123,9 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Ingame" ID="{DAC6FEF3-008B-4A40-BDD4-2D90C3BE4B30}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Step0_Bottom" ID="{FD2EBBFB-E165-4554-8A29-817EF85B3A20}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

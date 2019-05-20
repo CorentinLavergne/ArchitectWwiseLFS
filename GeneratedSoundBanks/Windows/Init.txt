@@ -1,3 +1,14 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	346041850	Elevator_Switch			\Default Work Unit\Elevator_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	551396004	Step5_Top	Elevator_Switch			
+	624341273	Step0_Bottom	Elevator_Switch			
+	1718617337	Step4	Elevator_Switch			
+	1718617340	Step1	Elevator_Switch			
+	1718617342	Step3	Elevator_Switch			
+	1718617343	Step2	Elevator_Switch			
+
 State Group	ID	Name			Wwise Object Path	Notes
 	1992488372	State_Music			\Default Work Unit\State_Music	
 
