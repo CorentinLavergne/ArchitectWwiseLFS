@@ -263,6 +263,11 @@
 									</ActiveSourceList>
 								</Sound>
 								<BlendContainer Name="Cascade" ID="{DD3C57DE-9F69-4A58-8AED-1A2BE5C43E88}" ShortID="565419105">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -273,7 +278,16 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CASCADE-003" ID="{A657E822-B322-4A3B-ADD4-8D53A74E2EBC}" ShortID="302664413">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Cascade_AttenuationProche" ID="{4AEF375B-2819-450C-97CD-6FABA4417352}" WorkUnitID="{88FA0E69-E7A0-474B-8E6F-09D5A4811D10}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 												</Reference>
@@ -283,6 +297,12 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CASCADE-003" ID="{679BD7BE-CBF6-4CFC-AE33-62B36861320B}" ShortID="287277598">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1.5"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.52573275862069"/>
+														<Property Name="LoopEnd" Type="Real64" Value="15.736933908046"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CASCADE-003.wav</AudioFile>
 												</AudioFileSource>
@@ -292,7 +312,50 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="CASCADE-001" ID="{C2EFC8CC-CA0C-4736-A833-9AAD3FDA37F4}" ShortID="57496478">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{99ABBE30-8CCC-4CB5-A2AC-7366ED4CBC82}" ShortID="488758006">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}" WorkUnitID="{222EF79A-FFD7-49D9-98F3-57DB066464F6}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E9A5BE9F-889C-4046-AEEE-7CE257448CB6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.24710424710425</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>2</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Cascade_AttenuationLoin" ID="{EBB65E02-4803-49F4-9B22-9170C5817515}" WorkUnitID="{88FA0E69-E7A0-474B-8E6F-09D5A4811D10}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 												</Reference>
@@ -302,6 +365,12 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CASCADE-001" ID="{A0FD2C33-C36B-488C-8F48-F9B98490C064}" ShortID="1059478536">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1.5"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.646321322737069"/>
+														<Property Name="LoopEnd" Type="Real64" Value="15.5815843211207"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CASCADE-001.wav</AudioFile>
 												</AudioFileSource>
@@ -310,8 +379,16 @@
 												<ActiveSource Name="CASCADE-001" ID="{A0FD2C33-C36B-488C-8F48-F9B98490C064}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="CASCADE-002" ID="{86787713-C893-4553-BB44-8E3A6EEBC548}" ShortID="931210962">
+										<Sound Name="CASCADE-002" ID="{390BCD00-44ED-48C6-834B-9465BFED31FF}" ShortID="631748242">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Cascade_AttenuationMilieu" ID="{5EAAE595-4A7E-48B9-B8EC-CC47313C37BE}" WorkUnitID="{88FA0E69-E7A0-474B-8E6F-09D5A4811D10}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 												</Reference>
@@ -320,25 +397,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CASCADE-002" ID="{CD9962A0-A2D8-46D5-80BC-3777E0D38995}" ShortID="1063792727">
+												<AudioFileSource Name="CASCADE-002" ID="{D9707495-2E55-4E9F-A832-E25FB5F6A412}" ShortID="888454520">
 													<Language>SFX</Language>
 													<AudioFile>CASCADE-002.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="CASCADE-002" ID="{CD9962A0-A2D8-46D5-80BC-3777E0D38995}" Platform="Linked"/>
+												<ActiveSource Name="CASCADE-002" ID="{D9707495-2E55-4E9F-A832-E25FB5F6A412}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<BlendTrackList>
-										<BlendTrack Name="Volume_Cascade" ID="{6F0B7482-B314-4E1E-96FB-38EA8EC5CC3F}" ShortID="41943299">
+										<BlendTrack Name="Cascade_Volume" ID="{C8889852-D852-4EBE-A1B0-62BE7812656C}" ShortID="419532242">
 											<PropertyList>
 												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{D335DF6F-3ABA-4390-8070-371384906C03}" ShortID="245195532"/>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
@@ -351,25 +423,29 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>11.2567945026178</RightEdgePos>
+														<RightEdgePos>0.583450776437046</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
 												<BlendTrackAssoc>
-													<ItemRef Name="CASCADE-002" ID="{86787713-C893-4553-BB44-8E3A6EEBC548}"/>
+													<ItemRef Name="CASCADE-002" ID="{390BCD00-44ED-48C6-834B-9465BFED31FF}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>0.995014397905756</LeftEdgePos>
+														<LeftEdgePos>0.31196535170483</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>25.3143861256545</RightEdgePos>
+														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+														<RightEdgePos>1.02038545376362</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
 												<BlendTrackAssoc>
 													<ItemRef Name="CASCADE-001" ID="{C2EFC8CC-CA0C-4736-A833-9AAD3FDA37F4}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>16.7801047120419</LeftEdgePos>
+														<LeftEdgePos>0.726288257749903</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>31.8062827225131</RightEdgePos>
+														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+														<RightEdgePos>1.99475753604194</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
@@ -673,7 +749,8 @@
 																<AudioFileSource Name="VILLE HAUTEUR-001" ID="{CDCA1701-1F4C-4723-9A58-25ABA5A3FFB9}" ShortID="18659226">
 																	<PropertyList>
 																		<Property Name="CrossfadeDuration" Type="Real64" Value="1.5"/>
-																		<Property Name="LoopEnd" Type="Real64" Value="15.3103448275862"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="2.97844834907558"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="14.9137931034483"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																		<Property Name="TrimBegin" Type="Real64" Value="2.3448275862069"/>
 																	</PropertyList>
@@ -1103,9 +1180,14 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Ascenseur" ID="{7ACE6D00-E048-42D5-8B6E-B9DF76A2B876}" ShortID="189654348">
-					<Comment>A METTRE EN DRY
+					<Comment>A METTRE EN DRY, CHANGER LE SD CRAN
 </Comment>
 					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-20</Value>
@@ -1123,6 +1205,16 @@
 					<ChildrenList>
 						<SwitchContainer Name="New Switch Container" ID="{B4AB0517-B383-4C15-9BF5-BF603B807E94}" ShortID="696902726">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>

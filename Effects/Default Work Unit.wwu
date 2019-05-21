@@ -31,6 +31,11 @@
 						<Property Name="GainBand3" Type="Real32" Value="-7.5"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_Wwise_Recorder" ID="{885D4A18-4BEC-478F-BBA4-1EF8DABC9F48}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+					<PropertyList>
+						<Property Name="AuthoringFilename" Type="string" Value="C:\Users\corentin.lavergne\Music\MoodArchitect.wav"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

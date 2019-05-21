@@ -50,10 +50,6 @@
 							<Position X="4" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Cascade" ID="{6D9CCFD6-2854-435B-B779-800FE8637618}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
-							<Position X="5" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_Bassin" ID="{28A2C97C-59FF-4041-80B9-AD16C75E8A8E}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
 							<Position X="5" Y="1"/>
 						</Module>
@@ -65,7 +61,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}"/>
-							<Value>76</Value>
+							<Value>0.699868938401049</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Playback_Rate" ID="{28387EE3-C13A-4316-B9C3-DB5C521624AF}"/>
@@ -85,6 +81,10 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="New_Game_Parameter" ID="{F2A391B8-428F-4588-9175-A71FED5B8A6B}"/>
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>

@@ -36,17 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Cascade" ID="{6D9CCFD6-2854-435B-B779-800FE8637618}">
-					<ChildrenList>
-						<Action Name="" ID="{66722185-FB65-4501-8413-C22E06B04D33}" ShortID="480701402">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CASCADE_01" ID="{F7DBE6FF-C46E-45A5-9835-C31336368B07}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Lumiere_Gresille" ID="{E7BAFE23-37A1-4493-96DB-9337DC24A21B}">
 					<ChildrenList>
 						<Action Name="" ID="{5F32C258-67F3-4869-A4F5-092781A1983F}" ShortID="649203609">
@@ -135,72 +124,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Acsenseur00" ID="{C7E8C5FF-D208-4AA7-8378-FAE5693223AC}">
-					<ChildrenList>
-						<Action Name="" ID="{B643B386-80A1-4FB0-B874-0A4A20BE39DA}" ShortID="822106902">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AscenseurEtage0" ID="{09AF71CC-D09C-4B04-8104-504555921C51}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Acsenseur01" ID="{5125D081-1AB5-42B4-BF91-774073C4D82C}">
-					<ChildrenList>
-						<Action Name="" ID="{2A5B0DD7-0343-4D7B-9E68-40C65C6C79AC}" ShortID="875286095">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AscenseurEtage01" ID="{5DEA750B-640C-49D3-A6EC-1C14C1789DC5}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Acsenseur02" ID="{F47003A4-F283-474A-AC79-9B760E97D8CB}">
-					<ChildrenList>
-						<Action Name="" ID="{DA6C20C0-11D8-4D34-8BD5-A275C6A5F012}" ShortID="194211216">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AscenseurEtage02" ID="{8C2DFC89-5224-4E69-8C0B-4F8B17FEA975}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Acsenseur03" ID="{BBEF6D13-6528-4828-8557-D61ABEE94B0D}">
-					<ChildrenList>
-						<Action Name="" ID="{342DBFAA-720E-4657-A001-EE6740EE958C}" ShortID="628349795">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AscenseurEtage03" ID="{B2AE733A-5156-4E5B-BC06-8F7D0F23DC56}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Acsenseur04" ID="{6971CC9A-C339-4662-9E00-5D0DDF7CE6D5}">
-					<ChildrenList>
-						<Action Name="" ID="{B74CED2E-94E4-43CF-955D-280230A6F3F4}" ShortID="880988195">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AscenseurEtage04" ID="{2D03F8C5-69CA-490B-B41D-175D0470D067}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_AcsenseurTOP" ID="{30751231-EE6A-4BFF-894D-D7BC1D71E85B}">
-					<ChildrenList>
-						<Action Name="" ID="{980EC436-06BE-4CBC-92AB-001E9BCB3C68}" ShortID="578431183">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AscenseurTop" ID="{61B52AC4-60F7-4055-AF0F-97AB406C7732}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Pluie_Ext" ID="{094423CA-333A-4117-BDBA-90B76AC4D152}">
 					<ChildrenList>
 						<Action Name="" ID="{07DD1461-5F64-4707-84AC-53BE084D83A0}" ShortID="745387805">
@@ -240,6 +163,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="New Switch Container" ID="{B4AB0517-B383-4C15-9BF5-BF603B807E94}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cascade" ID="{4F1A8786-2DC5-423B-AA1A-E17BBCDBE716}">
+					<ChildrenList>
+						<Action Name="" ID="{174F9632-D7CF-406B-BE87-7EC9A859D876}" ShortID="244610944">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cascade" ID="{DD3C57DE-9F69-4A58-8AED-1A2BE5C43E88}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

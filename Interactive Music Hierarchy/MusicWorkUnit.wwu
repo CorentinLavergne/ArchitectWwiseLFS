@@ -384,6 +384,7 @@
 								<MusicSegment Name="MusiqueInGame" ID="{B65AB6E8-9AFF-4445-8643-9087C32D61E6}" ShortID="164733618">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="264000"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -744,7 +745,6 @@
 								<MusicPlaylistItem Name="" ID="{777984EF-F3C5-4A32-B026-B7A9B005A0B6}" ShortID="349868846">
 									<PropertyList>
 										<Property Name="LoopCount" Type="int16" Value="0"/>
-										<Property Name="PlayMode" Type="int16" Value="1"/>
 									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{60E793AD-E294-47FA-A5AC-5950C21D30EB}" ShortID="324031338">

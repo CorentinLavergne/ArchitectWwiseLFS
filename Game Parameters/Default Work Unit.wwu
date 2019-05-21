@@ -3,7 +3,13 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{222EF79A-FFD7-49D9-98F3-57DB066464F6}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}"/>
+				<GameParameter Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+					</PropertyList>
+				</GameParameter>
 				<GameParameter Name="SideChainAmbianceRTPC" ID="{E2B12C6D-5CB2-44FB-B114-9AF64DB93D4F}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
@@ -17,6 +23,7 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="New_Game_Parameter" ID="{F2A391B8-428F-4588-9175-A71FED5B8A6B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

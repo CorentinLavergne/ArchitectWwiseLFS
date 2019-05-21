@@ -8,14 +8,14 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{820F8E66-9BCB-4ABD-B7D0-DE4AF1080310}" WorkUnitID="{9A7132A4-18EA-4B31-BFAC-C4AF657EC7FD}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+							<ObjectRef Name="New_Wwise_Recorder" ID="{885D4A18-4BEC-478F-BBA4-1EF8DABC9F48}" WorkUnitID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}">
-							<ReferenceList/>
 							<ChildrenList>
-								<Bus Name="Pluie" ID="{EA8A5147-9BA5-4E1C-83C0-D345AA59BAAF}">
-									<ReferenceList/>
-								</Bus>
+								<Bus Name="Pluie" ID="{EA8A5147-9BA5-4E1C-83C0-D345AA59BAAF}"/>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="Music" ID="{19B2DC38-631F-44A6-AAE1-3A3DBF2394E2}">
@@ -23,7 +23,6 @@
 								<Property Name="MaxDuckVolume" Type="Real64" Value="-14"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 							</PropertyList>
-							<ReferenceList/>
 							<DuckingList>
 								<DuckItem>
 									<BusRef Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}"/>
