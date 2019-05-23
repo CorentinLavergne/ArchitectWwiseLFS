@@ -22,6 +22,39 @@
 							<PropertyList>
 								<Property Name="MaxDuckVolume" Type="Real64" Value="-14"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{DCB8E249-1428-448D-81E3-DAF414C4B6DE}" ShortID="303016940">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SideChainRTPCCascade" ID="{3D3376B3-744C-4282-98AF-5DA6DCC3E8F9}" WorkUnitID="{222EF79A-FFD7-49D9-98F3-57DB066464F6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{196C622F-F79B-47C0-8695-E791AE1FE46B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>-0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-21.72973</XPos>
+														<YPos>-10.38172</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<DuckingList>
 								<DuckItem>
@@ -34,6 +67,13 @@
 									</DuckingParam>
 								</DuckItem>
 							</DuckingList>
+						</Bus>
+						<Bus Name="Cascade" ID="{A764C5E4-9BED-4F52-BCC0-495B219820CF}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="SideChainCascade_Music" ID="{EB804A00-4AFD-4D20-A5FB-EC9B58F80D5D}" WorkUnitID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}"/>
+								</Reference>
+							</ReferenceList>
 						</Bus>
 					</ChildrenList>
 				</Bus>

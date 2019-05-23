@@ -8,6 +8,8 @@
 						<State Name="None" ID="{E259F6B8-5B86-43B0-B84F-9F16F8A881C8}"/>
 						<State Name="Menu" ID="{B1B1EB07-76D8-454D-80C3-6060BE441633}"/>
 						<State Name="Ingame" ID="{DAC6FEF3-008B-4A40-BDD4-2D90C3BE4B30}"/>
+						<State Name="Level00" ID="{E11A9B36-4887-4F16-8E52-1937A6EE9AE4}"/>
+						<State Name="Level01" ID="{E75DEF89-F41D-40EF-842B-46913642669B}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

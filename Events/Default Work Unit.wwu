@@ -162,7 +162,7 @@
 						<Action Name="" ID="{97CD9E76-7B9D-412D-95CC-FCBA0A7A4278}" ShortID="72373356">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="New Switch Container" ID="{B4AB0517-B383-4C15-9BF5-BF603B807E94}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
+									<ObjectRef Name="Switch_Ascenseur" ID="{B4AB0517-B383-4C15-9BF5-BF603B807E94}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

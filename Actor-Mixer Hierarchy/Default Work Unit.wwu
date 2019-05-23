@@ -267,19 +267,21 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+											<ObjectRef Name="Cascade" ID="{A764C5E4-9BED-4F52-BCC0-495B219820CF}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CASCADE-003" ID="{A657E822-B322-4A3B-ADD4-8D53A74E2EBC}" ShortID="302664413">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
@@ -314,6 +316,7 @@
 										<Sound Name="CASCADE-001" ID="{C2EFC8CC-CA0C-4736-A833-9AAD3FDA37F4}" ShortID="57496478">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
@@ -336,10 +339,16 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>1.24710424710425</XPos>
+																		<XPos>0.7</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1.63864</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>2</XPos>
@@ -382,6 +391,7 @@
 										<Sound Name="CASCADE-002" ID="{390BCD00-44ED-48C6-834B-9465BFED31FF}" ShortID="631748242">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
@@ -423,7 +433,7 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>0.583450776437046</RightEdgePos>
+														<RightEdgePos>0.388596895318259</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 													</CrossfadingInfo>
@@ -431,10 +441,10 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="CASCADE-002" ID="{390BCD00-44ED-48C6-834B-9465BFED31FF}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>0.31196535170483</LeftEdgePos>
+														<LeftEdgePos>0.102519766489224</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-														<RightEdgePos>1.02038545376362</RightEdgePos>
+														<RightEdgePos>0.718669273442237</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 													</CrossfadingInfo>
@@ -442,10 +452,10 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="CASCADE-001" ID="{C2EFC8CC-CA0C-4736-A833-9AAD3FDA37F4}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>0.726288257749903</LeftEdgePos>
+														<LeftEdgePos>0.393203412184602</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-														<RightEdgePos>1.99475753604194</RightEdgePos>
+														<RightEdgePos>2</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
@@ -1198,12 +1208,15 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="EQ_Elevator" ID="{D355FCD2-B93A-4257-9CB9-A4D027055559}" WorkUnitID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SwitchContainer Name="New Switch Container" ID="{B4AB0517-B383-4C15-9BF5-BF603B807E94}" ShortID="696902726">
+						<SwitchContainer Name="Switch_Ascenseur" ID="{B4AB0517-B383-4C15-9BF5-BF603B807E94}" ShortID="696902726">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
@@ -1213,6 +1226,7 @@
 										<Value>2</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
@@ -1220,6 +1234,9 @@
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
@@ -1240,6 +1257,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CRAN ASCENSEUR-003" ID="{A3E1346D-F6B6-4EAE-AB87-410625B290AB}" ShortID="949775947">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1259,6 +1283,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="TAP ASCENSEUR-003" ID="{A1E65126-4E4F-417F-AA2B-8A7658DC9B1C}" ShortID="333823222">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1277,6 +1308,35 @@
 												<ActiveSource Name="TAP ASCENSEUR-003" ID="{E3A49EF3-CA49-4D84-9A63-A2C9C6CEB051}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="CLIC ASCENSEUR-003" ID="{BBEE1479-29D3-4AEA-8D77-6D3A539D20A5}" ShortID="23370481">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLIC ASCENSEUR-003" ID="{7880EFA4-8A54-4241-B35F-8D15FB047B75}" ShortID="912711014">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="2.50700655531609E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.50700655531609E-02"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLIC ASCENSEUR-003.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLIC ASCENSEUR-003" ID="{7880EFA4-8A54-4241-B35F-8D15FB047B75}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="AscenseurEtage04" ID="{2D03F8C5-69CA-490B-B41D-175D0470D067}" ShortID="1002880979">
@@ -1290,6 +1350,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CRAN ASCENSEUR-005" ID="{80B62808-9BBA-4C1A-92A3-F6613548BD9F}" ShortID="679434916">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1309,6 +1376,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="TAP ASCENSEUR-005" ID="{FBA88F1C-BCCD-41BC-AFEC-BA9A1822FBDF}" ShortID="4025448">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1327,6 +1401,35 @@
 												<ActiveSource Name="TAP ASCENSEUR-005" ID="{E127A58F-ADA2-492D-BD4E-91BAEFDC1AFF}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="CLIC ASCENSEUR-005" ID="{E60A45B4-79F0-4CB5-B76E-92186BEB5DCE}" ShortID="850838381">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLIC ASCENSEUR-005" ID="{83692A6F-C088-43AE-9A7A-D82A03727AA6}" ShortID="536422686">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="2.51863999640805E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.51863999640805E-02"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLIC ASCENSEUR-005.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLIC ASCENSEUR-005" ID="{83692A6F-C088-43AE-9A7A-D82A03727AA6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="AscenseurEtage0" ID="{09AF71CC-D09C-4B04-8104-504555921C51}" ShortID="653535256">
@@ -1340,6 +1443,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CRAN ASCENSEUR-001" ID="{CD1302B0-8F39-439D-BAD0-CD6CDB3D23F7}" ShortID="663063827">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1359,6 +1469,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="TAP ASCENSEUR-001" ID="{2EC18462-5185-4542-BD80-BC94784DA0A8}" ShortID="846701860">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1377,6 +1494,39 @@
 												<ActiveSource Name="TAP ASCENSEUR-001" ID="{A7AFA085-0EC9-4D95-AB16-6CF8FAC28112}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="CLIC ASCENSEUR-001" ID="{3A8A501E-0DE3-4CDB-950F-8341712627C1}" ShortID="390505425">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLIC ASCENSEUR-001" ID="{82F9029D-97DC-4AA8-8272-16E10D27AEE7}" ShortID="998703025">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.57680720186782E-02"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLIC ASCENSEUR-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLIC ASCENSEUR-001" ID="{82F9029D-97DC-4AA8-8272-16E10D27AEE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="AscenseurEtage01" ID="{5DEA750B-640C-49D3-A6EC-1C14C1789DC5}" ShortID="621583397">
@@ -1390,6 +1540,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CRAN ASCENSEUR-002" ID="{DF30041F-E5DF-4DBA-9937-DAAE7C57D8C9}" ShortID="642847047">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1409,6 +1566,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="TAP ASCENSEUR-002" ID="{65A9267B-D75E-436F-87A0-3EFBCEA60AD7}" ShortID="534634252">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1427,6 +1591,35 @@
 												<ActiveSource Name="TAP ASCENSEUR-002" ID="{F372F4D5-2895-44C3-B41A-5E0AE10794F4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="CLIC ASCENSEUR-002" ID="{45D9394F-8CF7-46C0-BB44-38664384B676}" ShortID="198319244">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLIC ASCENSEUR-002" ID="{BB7CDDD7-5453-426E-AA84-C8266FB568D6}" ShortID="948424303">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="2.44883934985632E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.44883934985632E-02"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLIC ASCENSEUR-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLIC ASCENSEUR-002" ID="{BB7CDDD7-5453-426E-AA84-C8266FB568D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="AscenseurTop" ID="{61B52AC4-60F7-4055-AF0F-97AB406C7732}" ShortID="333102016">
@@ -1440,6 +1633,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CRAN ASCENSEUR-006" ID="{45CCE84D-6BEF-4D10-A857-06F63DB0885B}" ShortID="913111240">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1483,6 +1683,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="TAP ASCENSEUR-006" ID="{FF65CDC1-C978-4472-B574-10F4BDA44A54}" ShortID="530241616">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1501,6 +1708,35 @@
 												<ActiveSource Name="TAP ASCENSEUR-006" ID="{D2C572F5-1285-4ED7-97F9-5C5BE572FB16}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="CLIC ASCENSEUR-006" ID="{D22365BB-93FE-4B87-B971-9E00BD317458}" ShortID="546094254">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLIC ASCENSEUR-006" ID="{FE7D6AF1-647F-4231-8A3B-9F07762E32DA}" ShortID="238185697">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="2.53609015804598E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.53609015804598E-02"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLIC ASCENSEUR-006.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLIC ASCENSEUR-006" ID="{FE7D6AF1-647F-4231-8A3B-9F07762E32DA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="AscenseurEtage03" ID="{B2AE733A-5156-4E5B-BC06-8F7D0F23DC56}" ShortID="737385458">
@@ -1514,6 +1750,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CRAN ASCENSEUR-004" ID="{69C18B3C-37BD-4502-97A4-9567B0A427B5}" ShortID="504511805">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1533,6 +1776,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="TAP ASCENSEUR-004" ID="{F31D9DAE-72A1-4DFF-B6E0-870FD17B9229}" ShortID="475238849">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
@@ -1551,6 +1801,35 @@
 												<ActiveSource Name="TAP ASCENSEUR-004" ID="{28C22AF8-CA80-45F4-A58C-910CDACED5F9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="CLIC ASCENSEUR-004" ID="{C13C3F26-00B1-455F-826E-B57CFBDC11F7}" ShortID="969232598">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLIC ASCENSEUR-004" ID="{6DE409E2-21A2-4897-A08F-07172419DB5D}" ShortID="975568114">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="2.51282327586207E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.51282327586207E-02"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLIC ASCENSEUR-004.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLIC ASCENSEUR-004" ID="{6DE409E2-21A2-4897-A08F-07172419DB5D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</BlendContainer>
 							</ChildrenList>
@@ -1558,39 +1837,21 @@
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="AscenseurEtage01" ID="{5DEA750B-640C-49D3-A6EC-1C14C1789DC5}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="AscenseurEtage03" ID="{B2AE733A-5156-4E5B-BC06-8F7D0F23DC56}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="AscenseurEtage02" ID="{8C2DFC89-5224-4E69-8C0B-4F8B17FEA975}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="AscenseurTop" ID="{61B52AC4-60F7-4055-AF0F-97AB406C7732}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="AscenseurEtage04" ID="{2D03F8C5-69CA-490B-B41D-175D0470D067}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="AscenseurEtage0" ID="{09AF71CC-D09C-4B04-8104-504555921C51}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-										</PropertyList>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>

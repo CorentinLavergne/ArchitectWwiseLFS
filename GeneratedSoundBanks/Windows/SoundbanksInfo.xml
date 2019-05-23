@@ -74,6 +74,10 @@
 					<ShortName>CHEMIN LUMIERE .wav</ShortName>
 					<Path>SFX\CHEMIN LUMIERE _05EFD9D7.wem</Path>
 				</File>
+				<File Id="238185697" Language="SFX">
+					<ShortName>CLIC ASCENSEUR-006.wav</ShortName>
+					<Path>SFX\CLIC ASCENSEUR-006_18D5FEB6.wem</Path>
+				</File>
 				<File Id="241742901" Language="SFX">
 					<ShortName>CRAN ASCENSEUR-006.wav</ShortName>
 					<Path>SFX\CRAN ASCENSEUR-006_E37C7245.wem</Path>
@@ -134,6 +138,10 @@
 					<ShortName>PLANTE-006.wav</ShortName>
 					<Path>SFX\PLANTE-006_16381BBD.wem</Path>
 				</File>
+				<File Id="536422686" Language="SFX">
+					<ShortName>CLIC ASCENSEUR-005.wav</ShortName>
+					<Path>SFX\CLIC ASCENSEUR-005_7AD7E371.wem</Path>
+				</File>
 				<File Id="599553525" Language="SFX">
 					<ShortName>CLOCHE ASCENSEUR.wav</ShortName>
 					<Path>SFX\CLOCHE ASCENSEUR_10DA3D60.wem</Path>
@@ -180,11 +188,15 @@
 				</File>
 				<File Id="888454520" Language="SFX">
 					<ShortName>CASCADE-002.wav</ShortName>
-					<Path>SFX\CASCADE-002_E37C7245.wem</Path>
+					<Path>SFX\CASCADE-002_592D8723.wem</Path>
 				</File>
 				<File Id="905312553" Language="SFX">
 					<ShortName>Pont1.wav</ShortName>
 					<Path>SFX\Pont1_592D8723.wem</Path>
+				</File>
+				<File Id="912711014" Language="SFX">
+					<ShortName>CLIC ASCENSEUR-003.wav</ShortName>
+					<Path>SFX\CLIC ASCENSEUR-003_4DD0C9CA.wem</Path>
 				</File>
 				<File Id="927569739" Language="SFX">
 					<ShortName>CRAN ASCENSEUR-004.wav</ShortName>
@@ -193,6 +205,10 @@
 				<File Id="938468556" Language="SFX">
 					<ShortName>TAP ASCENSEUR-003.wav</ShortName>
 					<Path>SFX\TAP ASCENSEUR-003_E37C7245.wem</Path>
+				</File>
+				<File Id="948424303" Language="SFX">
+					<ShortName>CLIC ASCENSEUR-002.wav</ShortName>
+					<Path>SFX\CLIC ASCENSEUR-002_280B267C.wem</Path>
 				</File>
 				<File Id="953000917" Language="SFX">
 					<ShortName>VILLE HAUTEUR GRAVE.wav</ShortName>
@@ -210,9 +226,17 @@
 					<ShortName>CRAN ASCENSEUR-002.wav</ShortName>
 					<Path>SFX\CRAN ASCENSEUR-002_E37C7245.wem</Path>
 				</File>
+				<File Id="975568114" Language="SFX">
+					<ShortName>CLIC ASCENSEUR-004.wav</ShortName>
+					<Path>SFX\CLIC ASCENSEUR-004_BD06D038.wem</Path>
+				</File>
 				<File Id="995128658" Language="SFX">
 					<ShortName>PLANTE-003.wav</ShortName>
 					<Path>SFX\PLANTE-003_64858E82.wem</Path>
+				</File>
+				<File Id="998703025" Language="SFX">
+					<ShortName>CLIC ASCENSEUR-001.wav</ShortName>
+					<Path>SFX\CLIC ASCENSEUR-001_CCD1B6B6.wem</Path>
 				</File>
 				<File Id="1022744147" Language="SFX">
 					<ShortName>PLUIE EXTERIEUR.wav</ShortName>
