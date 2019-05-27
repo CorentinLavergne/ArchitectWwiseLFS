@@ -14,6 +14,47 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{C77AE6A2-A74F-4375-9C4B-2247ACBD6A5D}" ShortID="115341401">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RTPCMusic_Rain" ID="{69A19E67-16A0-492B-9BD1-07B3C7900B92}" WorkUnitID="{222EF79A-FFD7-49D9-98F3-57DB066464F6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{B70C12A6-C1C1-4A74-878B-8D5CE1E433A1}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0.153740000000028</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-37.75163</XPos>
+														<YPos>6.96700000000305E-02</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-15.73856</XPos>
+														<YPos>-4</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Pluie" ID="{EA8A5147-9BA5-4E1C-83C0-D345AA59BAAF}"/>
 							</ChildrenList>
@@ -37,7 +78,7 @@
 												<PointList>
 													<Point>
 														<XPos>-48</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
@@ -56,17 +97,11 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}"/>
-									<DuckingParam>
-										<Volume>-6</Volume>
-										<FadeInTime>1</FadeInTime>
-										<FadeOutTime>1</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="SideChainMusic_Rain" ID="{CF40464C-B80F-4EDC-A98C-F60D12B0F95D}" WorkUnitID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}"/>
+								</Reference>
+							</ReferenceList>
 						</Bus>
 						<Bus Name="Cascade" ID="{A764C5E4-9BED-4F52-BCC0-495B219820CF}">
 							<ReferenceList>
@@ -74,6 +109,43 @@
 									<ObjectRef Name="SideChainCascade_Music" ID="{EB804A00-4AFD-4D20-A5FB-EC9B58F80D5D}" WorkUnitID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}"/>
 								</Reference>
 							</ReferenceList>
+						</Bus>
+						<Bus Name="Music2" ID="{926CC54F-9812-4554-A6F7-4F9A7AD6BF52}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{1433E748-1E2B-4541-B13F-A500DFE8EB26}" ShortID="455988701">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SideChainRTPCCascade" ID="{3D3376B3-744C-4282-98AF-5DA6DCC3E8F9}" WorkUnitID="{222EF79A-FFD7-49D9-98F3-57DB066464F6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{BBB1956A-A5F0-4F87-B1DF-78944A07F7A5}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-21.72973</XPos>
+														<YPos>-10.38172</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 						</Bus>
 					</ChildrenList>
 				</Bus>

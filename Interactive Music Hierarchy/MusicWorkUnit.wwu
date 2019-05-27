@@ -125,7 +125,6 @@
 											<PropertyList>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo>
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{42A3C1D3-BE3B-48CA-B71D-ECD475EB8FD0}">
@@ -145,7 +144,6 @@
 											<PropertyList>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo>
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{009134FC-A260-42FD-9294-DD4A54785C5B}">
@@ -344,7 +342,6 @@
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo>
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{3FAE0C72-4ADA-4C13-8BFF-296281FE11D3}">
@@ -395,7 +392,6 @@
 											</TransitionInfo>
 										</MusicTransition>
 										<MusicTransition Name="Transition" ID="{0748D934-6F7B-495A-B75F-174C98580D8D}">
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 										<MusicTransition Name="Transition" ID="{39C28E04-4855-48C0-A023-48493FB05BC5}">
@@ -576,6 +572,648 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Menu2" ID="{EA09131C-42D4-43C1-A529-139A1AE92F73}" ShortID="944232079">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="NappeA1" ID="{ABF27497-209A-43FA-999D-1D3843F9A593}" ShortID="277465455">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16941.1875"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="NappeA1" ID="{60605412-D5A7-4EEE-BDF5-599F97EA4A8B}" ShortID="594909748">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NappeA1" ID="{E587566B-FD49-446F-A660-9E5E92530379}" ShortID="627032078">
+													<Language>SFX</Language>
+													<AudioFile>NappeA1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{550515A4-FC50-463E-9E30-D11F9B646FC6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{57196EA7-5A06-4A42-868E-D970ECCB0F76}">
+													<ClipList>
+														<MusicClip Name="NappeA1" ID="{EDBB7FCA-EA4B-467D-9CEB-091A2F8E210D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16941.1875"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="NappeA1" ID="{E587566B-FD49-446F-A660-9E5E92530379}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{AE9DA595-E0F8-4E8F-BD16-E7626EDE8D99}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="1374.65635714286"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{277A3294-7FD2-4FA8-BD7D-18D763D338D0}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="10532.5782857143"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="NappeA2" ID="{7A845576-EE58-4AC1-A85A-BFE5434BABB1}" ShortID="494652982">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16941.1875"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="NappeA2" ID="{DF68BD99-EB8B-4204-9A75-40D69A1E6D8A}" ShortID="64213342">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NappeA2" ID="{15518582-A212-4C06-B657-2227C239D24B}" ShortID="175999245">
+													<Language>SFX</Language>
+													<AudioFile>NappeA2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AD7453A4-0B6B-430E-B589-B1A04930BFF7}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{AD0E6844-655A-47D5-9F5F-3F070CECFFB3}">
+													<ClipList>
+														<MusicClip Name="NappeA2" ID="{C703D0E6-C01A-40A7-B082-B41580475E8D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16941.1875"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="NappeA2" ID="{15518582-A212-4C06-B657-2227C239D24B}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{6B013DE2-756C-4560-ACF0-D0BEDE3A0E50}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="2265.27878571429"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{3CD1B791-7C20-4388-8A6A-7D235EAB2ED6}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="12178.2936428571"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="NappeA3" ID="{847CA74D-B758-47AF-9C9E-655411D237C5}" ShortID="387496162">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16941.1875"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="NappeA3" ID="{82B243C6-74CD-44A0-B141-97A2EE7CA1B4}" ShortID="733052639">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NappeA3" ID="{D9635450-3B86-4971-A261-AF0783FADE94}" ShortID="741198233">
+													<Language>SFX</Language>
+													<AudioFile>NappeA3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{D94C830C-7C23-4431-BCBA-B26CA8A3E662}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{94DAED86-3828-4356-B5B1-BA87D179CF60}">
+													<ClipList>
+														<MusicClip Name="NappeA3" ID="{8D1FF72B-0CF1-40B0-A677-31C18626CBDC}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16941.1875"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="NappeA3" ID="{D9635450-3B86-4971-A261-AF0783FADE94}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{5753E6F1-4A52-4619-A1EC-C3DB4C423171}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="2149.11064285714"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{1F0548E4-9FE2-4998-9CE5-B9798ED537DA}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="11248.9485"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="NappeA4" ID="{9DAE7F2F-7585-4E11-9F4D-DF8FC7E1C519}" ShortID="1045371282">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16941.1875"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="NappeA4" ID="{F37B03A3-DEED-444A-9726-3D4C7B82EFA7}" ShortID="593941114">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NappeA4" ID="{C1657AFE-20B4-4834-9983-FC46AA456AFC}" ShortID="680893573">
+													<Language>SFX</Language>
+													<AudioFile>NappeA4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{02FEC94F-9247-446D-9438-92D50A05C7E9}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{1C995B7B-64E8-496B-B824-A09271F97B41}">
+													<ClipList>
+														<MusicClip Name="NappeA4" ID="{99A2EF50-F92A-4ECD-8F4A-B941C57F63FB}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16941.1875"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="NappeA4" ID="{C1657AFE-20B4-4834-9983-FC46AA456AFC}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{C3FBCD27-EE14-4F22-9F83-96C5AE9E9AB3}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="2304.0015"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{15D68747-5C67-44A1-BCDC-5D8073E71971}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="11520.0075"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="NappeB1" ID="{1E3FDA02-A7BE-4555-B44B-A8CC3C4622A7}" ShortID="710594579">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16941.1875"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music2" ID="{926CC54F-9812-4554-A6F7-4F9A7AD6BF52}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="NappeB1" ID="{36BA39F4-03FF-4422-88E2-BEF280B4C148}" ShortID="460935069">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NappeB1" ID="{B54B5C88-2BEC-4BB7-B391-593ADBB54D61}" ShortID="575275645">
+													<Language>SFX</Language>
+													<AudioFile>NappeB1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{C799B451-013A-4F61-B344-C7D901699298}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{AABAC459-07D5-4334-8266-C21CD42759FC}">
+													<ClipList>
+														<MusicClip Name="NappeB1" ID="{59402FCE-0863-4036-9D23-3DBDBBAAF3BB}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16941.1875"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="NappeB1" ID="{B54B5C88-2BEC-4BB7-B391-593ADBB54D61}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{DF8F5B1D-FADF-433E-B5FF-B14448B58BCE}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="600.202071428572"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{2E86951C-3276-419F-9DD8-2FFC13EE9086}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="8693.24935714286"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="NappeB2" ID="{1E4637AE-209A-46F0-90D0-21E328C11852}" ShortID="314740913">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16941.1875"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music2" ID="{926CC54F-9812-4554-A6F7-4F9A7AD6BF52}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="NappeB2" ID="{67C7D36A-5C51-4E18-920C-2CCFE1CD9A99}" ShortID="1001655329">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NappeB2" ID="{394F6E03-336E-4220-9BE4-9DA7EBC4A425}" ShortID="897419761">
+													<Language>SFX</Language>
+													<AudioFile>NappeB2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{078C63CF-01AE-427E-A26A-1DF890EED2E6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{CE33E2FD-76BE-4771-A4BF-9FAC27100E1C}">
+													<ClipList>
+														<MusicClip Name="NappeB2" ID="{687E231B-8563-4C96-9E41-61B15374CC57}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16941.1875"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="NappeB2" ID="{394F6E03-336E-4220-9BE4-9DA7EBC4A425}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{F70C7671-17E6-4BE7-A761-739DD1657FFF}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="522.756642857143"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{C9677ED7-3AFA-40FC-9141-6A78B1936AD7}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="8848.14021428572"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="NappeB3" ID="{C95C3304-9E6B-4E75-B1A1-ACE72E455152}" ShortID="537583206">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16941.1875"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music2" ID="{926CC54F-9812-4554-A6F7-4F9A7AD6BF52}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="NappeB3" ID="{A5CB2A3F-B744-4D00-ABA2-1B5EB472DBF6}" ShortID="1014697376">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NappeB3" ID="{34B8BDC4-3546-45B9-9AD3-D4D40706FB55}" ShortID="905758481">
+													<Language>SFX</Language>
+													<AudioFile>NappeB3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{796591DB-F286-4682-9B87-4BAF8EB45DC0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{A4F5F975-63BB-4A0E-9CFF-0E32F0E726C4}">
+													<ClipList>
+														<MusicClip Name="NappeB3" ID="{DC67983C-EF53-4219-9BB1-C33D4C34E291}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16941.1875"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="NappeB3" ID="{34B8BDC4-3546-45B9-9AD3-D4D40706FB55}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{B58A25FC-3714-475C-AAE6-1CF0EA7CF93B}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="697.008857142857"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{8B9F8591-C883-4013-9346-D17BB5281B1E}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="8112.40864285714"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="NappeB4" ID="{03FCB6FA-0952-4B0A-A3F7-7F0D6D3BFE74}" ShortID="308104524">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16941.1875"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music2" ID="{926CC54F-9812-4554-A6F7-4F9A7AD6BF52}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="NappeB4" ID="{DFF4A4AB-932E-4F24-A58F-EB3053E14B06}" ShortID="82958981">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NappeB4" ID="{F9C7B208-1619-4192-ACFC-DE9465D0B91B}" ShortID="189967105">
+													<Language>SFX</Language>
+													<AudioFile>NappeB4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{5B0A78B0-9387-4866-B942-0A48425A93ED}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{D9180236-F0A2-4F1C-838C-CD015F80120E}">
+													<ClipList>
+														<MusicClip Name="NappeB4" ID="{21175E8A-6A63-4BB2-93FE-5169B761AE9C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16941.1875"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="NappeB4" ID="{F9C7B208-1619-4192-ACFC-DE9465D0B91B}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{3395AF0D-0664-455D-93A0-1AAE9AF24B61}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="851.899714285714"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{2E9B9243-8A08-4178-A572-43010B156721}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="8654.52664285714"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{E2C1CE97-FD8A-4C6F-B3D8-FBAFBAE93390}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{31FC7636-FA09-4FF4-8826-69649ECA881C}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{D72F2012-7371-4E4D-84AA-03D16418F7EB}" ShortID="891187213">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{7C85AC5B-FF1A-462D-9ECC-F696B543F082}" ShortID="445808483">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="NappeA1" ID="{ABF27497-209A-43FA-999D-1D3843F9A593}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{2D2408BC-CF70-4B34-BB31-6E671DE8639B}" ShortID="285793152">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{5B5B4392-6F20-466E-A429-48A1CF3A94A2}" ShortID="904295375">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeA2" ID="{7A845576-EE58-4AC1-A85A-BFE5434BABB1}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{50453E71-6840-4FC4-9497-66D612E8F157}" ShortID="859482731">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeA3" ID="{847CA74D-B758-47AF-9C9E-655411D237C5}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{F32105D4-5980-4693-9C49-2158E701D1AC}" ShortID="929492663">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeA4" ID="{9DAE7F2F-7585-4E11-9F4D-DF8FC7E1C519}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{9D568B0B-A15D-45B5-B66F-CC6630492305}" ShortID="761138027">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="PlayMode" Type="int16" Value="2"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{DEBD8294-9E36-4B84-9304-25A529F7E26C}" ShortID="911495764">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeA1" ID="{ABF27497-209A-43FA-999D-1D3843F9A593}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{F172EE12-5992-4861-8544-10D76DCE42EC}" ShortID="702046984">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeA2" ID="{7A845576-EE58-4AC1-A85A-BFE5434BABB1}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{66660BB1-9400-4D9B-8B9F-E451A6AE0B2B}" ShortID="602106794">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeA3" ID="{847CA74D-B758-47AF-9C9E-655411D237C5}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{0DC07048-B584-4FE9-B3B4-A2D4D64EE5BE}" ShortID="599483590">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<SegmentRef Name="NappeA4" ID="{9DAE7F2F-7585-4E11-9F4D-DF8FC7E1C519}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{EC07D14B-2C1F-4FD4-8C76-FCD604B96C53}" ShortID="347023036">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{89BCAA75-1D32-4A0B-BDC5-16A6F71ACEF1}" ShortID="880014062">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeB1" ID="{1E3FDA02-A7BE-4555-B44B-A8CC3C4622A7}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{2C105DBF-6CF6-46AD-A217-E10E0D64CEBF}" ShortID="530230971">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeB2" ID="{1E4637AE-209A-46F0-90D0-21E328C11852}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{AC6B2C4F-E7CD-4011-A549-95AFF49140E6}" ShortID="311437728">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeB3" ID="{C95C3304-9E6B-4E75-B1A1-ACE72E455152}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{32F0B6D9-79CF-4A49-9E91-FD9BC5A51699}" ShortID="227690250">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="NappeB4" ID="{03FCB6FA-0952-4B0A-A3F7-7F0D6D3BFE74}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{96C26B84-DF3D-4A3B-934A-4D1900817BC5}">
@@ -706,6 +1344,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Level1" ID="{D86F0272-439A-4DED-AB37-0D2306DD5965}" WorkUnitID="{AEF708CF-B277-4624-8AA6-6A26154FC3A4}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Menu2" ID="{4EFF9350-615A-44FF-8F5A-F25376F47269}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Menu2" ID="{EA09131C-42D4-43C1-A529-139A1AE92F73}" WorkUnitID="{AEF708CF-B277-4624-8AA6-6A26154FC3A4}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

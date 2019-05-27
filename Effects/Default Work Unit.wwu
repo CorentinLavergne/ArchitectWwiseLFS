@@ -42,8 +42,16 @@
 						<Property Name="GainBand3" Type="Real32" Value="-8.5"/>
 					</PropertyList>
 				</Effect>
-				<Effect Name="SideChainCascade_Music" ID="{EB804A00-4AFD-4D20-A5FB-EC9B58F80D5D}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+				<Effect Name="SideChainCascade_Music" ID="{EB804A00-4AFD-4D20-A5FB-EC9B58F80D5D}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
+					</PropertyList>
+					<PluginData>
 	<GameParameter Name="SideChainRTPCCascade" ID="{3D3376B3-744C-4282-98AF-5DA6DCC3E8F9}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="SideChainMusic_Rain" ID="{CF40464C-B80F-4EDC-A98C-F60D12B0F95D}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="RTPCMusic_Rain" ID="{69A19E67-16A0-492B-9BD1-07B3C7900B92}"/>
 </PluginData>
 				</Effect>
 			</ChildrenList>

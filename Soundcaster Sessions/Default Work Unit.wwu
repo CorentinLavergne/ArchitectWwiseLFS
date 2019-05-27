@@ -65,7 +65,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}"/>
-							<Value>1.25</Value>
+							<Value>1.71</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SideChainRTPCCascade" ID="{3D3376B3-744C-4282-98AF-5DA6DCC3E8F9}"/>
@@ -108,6 +108,10 @@
 							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="RTPCMusic_Rain" ID="{69A19E67-16A0-492B-9BD1-07B3C7900B92}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
 							<Value>6</Value>
 						</RTPCValue>
@@ -125,7 +129,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Level01" ID="{E75DEF89-F41D-40EF-842B-46913642669B}"/>
+						<CurrentStateRef Name="Menu2" ID="{4EFF9350-615A-44FF-8F5A-F25376F47269}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Step0_Bottom" ID="{FD2EBBFB-E165-4554-8A29-817EF85B3A20}"/>

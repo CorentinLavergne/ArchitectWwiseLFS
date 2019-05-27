@@ -10,6 +10,7 @@
 						<State Name="Ingame" ID="{DAC6FEF3-008B-4A40-BDD4-2D90C3BE4B30}"/>
 						<State Name="Level00" ID="{E11A9B36-4887-4F16-8E52-1937A6EE9AE4}"/>
 						<State Name="Level01" ID="{E75DEF89-F41D-40EF-842B-46913642669B}"/>
+						<State Name="Menu2" ID="{4EFF9350-615A-44FF-8F5A-F25376F47269}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
