@@ -267,6 +267,34 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{B842F088-E5B0-46AE-AAD5-396687AB248E}" ShortID="331646787">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}" WorkUnitID="{222EF79A-FFD7-49D9-98F3-57DB066464F6}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{4D914EB8-8947-4D5E-904D-31439995EA3E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>2</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2</XPos>
+																<YPos>27</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -281,7 +309,6 @@
 										<Sound Name="CASCADE-003" ID="{A657E822-B322-4A3B-ADD4-8D53A74E2EBC}" ShortID="302664413">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
@@ -319,7 +346,7 @@
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="71"/>
 												<Property Name="Volume" Type="Real64">
 													<RTPCList>
 														<RTPC Name="" ID="{99ABBE30-8CCC-4CB5-A2AC-7366ED4CBC82}" ShortID="488758006">
@@ -339,13 +366,13 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>0.7</XPos>
+																		<XPos>0.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																		<SegmentShape>SCurve</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>1.63864</XPos>
+																		<XPos>1.25</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																		<SegmentShape>Log2</SegmentShape>
@@ -391,9 +418,9 @@
 										<Sound Name="CASCADE-002" ID="{390BCD00-44ED-48C6-834B-9465BFED31FF}" ShortID="631748242">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="68"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -433,7 +460,7 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>0.388596895318259</RightEdgePos>
+														<RightEdgePos>0.205110656786149</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 													</CrossfadingInfo>
@@ -441,10 +468,10 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="CASCADE-002" ID="{390BCD00-44ED-48C6-834B-9465BFED31FF}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>0.102519766489224</LeftEdgePos>
+														<LeftEdgePos>5.79588228457116E-02</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-														<RightEdgePos>0.718669273442237</RightEdgePos>
+														<RightEdgePos>0.385772812105409</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 													</CrossfadingInfo>
@@ -452,7 +479,7 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="CASCADE-001" ID="{C2EFC8CC-CA0C-4736-A833-9AAD3FDA37F4}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>0.393203412184602</LeftEdgePos>
+														<LeftEdgePos>0.225444565526673</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
 														<RightEdgePos>2</RightEdgePos>
@@ -562,6 +589,9 @@
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="61"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="PluieVille_Attenuation" ID="{749394EF-E68B-477A-84CA-D0BF506BB24A}" WorkUnitID="{88FA0E69-E7A0-474B-8E6F-09D5A4811D10}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 														</Reference>
@@ -652,6 +682,9 @@
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PluieVille_Attenuation" ID="{749394EF-E68B-477A-84CA-D0BF506BB24A}" WorkUnitID="{88FA0E69-E7A0-474B-8E6F-09D5A4811D10}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 										</Reference>

@@ -25,7 +25,7 @@
 				</GameParameter>
 				<GameParameter Name="SideChainRTPCCascade" ID="{3D3376B3-744C-4282-98AF-5DA6DCC3E8F9}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
 						<Property Name="Min" Type="Real64" Value="-48"/>
 					</PropertyList>
