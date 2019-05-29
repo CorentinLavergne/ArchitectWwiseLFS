@@ -34,6 +34,10 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MakeRainLight" ID="{ACB0849B-C85F-4A27-9A11-454AEB509FE9}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Pluie_Ext" ID="{094423CA-333A-4117-BDBA-90B76AC4D152}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}"/>
 							<Position X="2" Y="2"/>
 						</Module>
@@ -129,7 +133,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Menu2" ID="{4EFF9350-615A-44FF-8F5A-F25376F47269}"/>
+						<CurrentStateRef Name="Tuto" ID="{E11A9B36-4887-4F16-8E52-1937A6EE9AE4}"/>
+						<CurrentStateRef Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Step0_Bottom" ID="{FD2EBBFB-E165-4554-8A29-817EF85B3A20}"/>

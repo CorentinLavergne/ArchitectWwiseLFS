@@ -6,6 +6,7 @@
 				<SoundBank Name="MainSoundBank" ID="{BF425816-1590-4044-9A4D-BB0848C74102}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Bassin" ID="{28A2C97C-59FF-4041-80B9-AD16C75E8A8E}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MakeRainStrong" ID="{44BCFBAE-FD5D-4104-92BD-F46A51E3A6C2}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pluie_Ext" ID="{094423CA-333A-4117-BDBA-90B76AC4D152}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Cascade" ID="{4F1A8786-2DC5-423B-AA1A-E17BBCDBE716}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ascenseur" ID="{5775C340-AB44-424A-B19C-FABE6BA71F90}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
@@ -16,6 +17,7 @@
 						<ObjectRef Name="Play_Poser_Module" ID="{32778B5D-E0B0-461D-BC51-14BCA9132666}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Prendre_Module" ID="{806E352E-ACA0-4725-8AE2-0585A8241CA1}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Plante" ID="{518EDDC7-4CEC-487C-BECA-CC800E331203}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MakeRainLight" ID="{ACB0849B-C85F-4A27-9A11-454AEB509FE9}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pluie_Toit" ID="{ACA39ABD-9A3D-4B64-B607-9EAC92DF5343}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ville" ID="{50865FFF-B5A7-4CAE-B709-E3DD9BFDE06B}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Lumiere_Allume" ID="{A819110F-9FE9-4DD4-9F1C-BD0C1617CFB2}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>

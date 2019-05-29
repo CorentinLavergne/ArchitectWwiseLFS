@@ -37,10 +37,9 @@
 														<XPos>-37.75163</XPos>
 														<YPos>6.96700000000305E-02</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-15.73856</XPos>
+														<XPos>-20</XPos>
 														<YPos>-4</YPos>
 														<Flags>0</Flags>
 													</Point>

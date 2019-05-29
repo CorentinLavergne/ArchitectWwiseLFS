@@ -615,10 +615,36 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="State_Pluie" ID="{D11C7B8A-C275-4BC9-9A9D-C9D8D3791513}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Light" ID="{25097902-363C-49DC-A704-0621A6C3D237}"/>
+														<CustomState Name="" ID="{FA6DF621-177A-4E6D-946F-6F73A241E863}" ShortID="763558913">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-12"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}"/>
+														<CustomState Name="" ID="{10250845-8748-445F-A5B8-540AB85364A4}" ShortID="457902415"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</BlendContainer>
 										<BlendContainer Name="Pluie Toit" ID="{9CCF5410-0370-44F5-BD4B-4006C8A1D3B4}" ShortID="980045353">
 											<PropertyList>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -672,6 +698,27 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="State_Pluie" ID="{D11C7B8A-C275-4BC9-9A9D-C9D8D3791513}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Light" ID="{25097902-363C-49DC-A704-0621A6C3D237}"/>
+														<CustomState Name="" ID="{3226EC0C-8AE3-4CDB-870A-33F63DDC2620}" ShortID="682535423">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-7"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}"/>
+														<CustomState Name="" ID="{3E3116DD-FAA4-4CE4-91D4-110ECF6A42B0}" ShortID="873953601"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</BlendContainer>
 									</ChildrenList>
 								</BlendContainer>

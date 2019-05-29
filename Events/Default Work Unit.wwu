@@ -179,6 +179,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MakeRainStrong" ID="{44BCFBAE-FD5D-4104-92BD-F46A51E3A6C2}">
+					<ChildrenList>
+						<Action Name="" ID="{E5FE97ED-720B-4E95-A8DA-9A7495E6032A}" ShortID="701286451">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}" WorkUnitID="{52E6D1A5-68A2-46D9-8C9F-A01A243B9884}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MakeRainLight" ID="{ACB0849B-C85F-4A27-9A11-454AEB509FE9}">
+					<ChildrenList>
+						<Action Name="" ID="{13EA9AAC-FBE8-4318-AEB6-C15CD175C573}" ShortID="1061316714">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Light" ID="{25097902-363C-49DC-A704-0621A6C3D237}" WorkUnitID="{52E6D1A5-68A2-46D9-8C9F-A01A243B9884}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

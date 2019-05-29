@@ -6,12 +6,25 @@
 				<StateGroup Name="State_Music" ID="{17AAE0D4-7FBF-4289-A585-860C987A2264}">
 					<ChildrenList>
 						<State Name="None" ID="{E259F6B8-5B86-43B0-B84F-9F16F8A881C8}"/>
-						<State Name="Menu" ID="{B1B1EB07-76D8-454D-80C3-6060BE441633}"/>
-						<State Name="Ingame" ID="{DAC6FEF3-008B-4A40-BDD4-2D90C3BE4B30}"/>
-						<State Name="Level00" ID="{E11A9B36-4887-4F16-8E52-1937A6EE9AE4}"/>
-						<State Name="Level01" ID="{E75DEF89-F41D-40EF-842B-46913642669B}"/>
-						<State Name="Menu2" ID="{4EFF9350-615A-44FF-8F5A-F25376F47269}"/>
+						<State Name="Tuto" ID="{E11A9B36-4887-4F16-8E52-1937A6EE9AE4}"/>
+						<State Name="Level1" ID="{E75DEF89-F41D-40EF-842B-46913642669B}"/>
+						<State Name="Menu" ID="{4EFF9350-615A-44FF-8F5A-F25376F47269}"/>
 					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="State_Pluie" ID="{D11C7B8A-C275-4BC9-9A9D-C9D8D3791513}">
+					<ChildrenList>
+						<State Name="None" ID="{6CBAE09E-3C43-4391-81AF-BAFB3E3AF200}"/>
+						<State Name="Light" ID="{25097902-363C-49DC-A704-0621A6C3D237}"/>
+						<State Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}"/>
+							<EndState Name="Light" ID="{25097902-363C-49DC-A704-0621A6C3D237}"/>
+							<Time>9</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
