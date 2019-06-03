@@ -128,12 +128,16 @@
 							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="RTPC_Table" ID="{8B3226E5-71E2-4DA3-BC85-DBD7FBCA96AE}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
 							<Value>50</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Tuto" ID="{E11A9B36-4887-4F16-8E52-1937A6EE9AE4}"/>
+						<CurrentStateRef Name="Menu" ID="{4EFF9350-615A-44FF-8F5A-F25376F47269}"/>
 						<CurrentStateRef Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

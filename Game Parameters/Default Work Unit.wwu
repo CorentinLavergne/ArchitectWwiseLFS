@@ -37,6 +37,7 @@
 						<Property Name="Min" Type="Real64" Value="-48"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="RTPC_Table" ID="{8B3226E5-71E2-4DA3-BC85-DBD7FBCA96AE}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
