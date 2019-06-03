@@ -207,6 +207,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Table" ID="{98DA3983-833A-4687-907A-FE9EAA9150B9}">
+					<ChildrenList>
+						<Action Name="" ID="{D1FB7F7D-1781-4181-A76E-E7B41ABB1D10}" ShortID="272343951">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TABLE_TOURNE" ID="{4E281FB1-C7D0-4DFD-AFBF-C61F3B83F7BF}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

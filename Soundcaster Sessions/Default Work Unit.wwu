@@ -129,7 +129,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Table" ID="{8B3226E5-71E2-4DA3-BC85-DBD7FBCA96AE}"/>
-							<Value>50</Value>
+							<Value>-1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>

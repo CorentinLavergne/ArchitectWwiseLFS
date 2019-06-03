@@ -15,6 +15,7 @@
 						<ObjectRef Name="Play_Lumiere_Gresille" ID="{E7BAFE23-37A1-4493-96DB-9337DC24A21B}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Tp_Module" ID="{468D2C72-33A9-453C-B626-07358478DE09}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Poser_Module" ID="{32778B5D-E0B0-461D-BC51-14BCA9132666}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Table" ID="{98DA3983-833A-4687-907A-FE9EAA9150B9}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Prendre_Module" ID="{806E352E-ACA0-4725-8AE2-0585A8241CA1}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Plante" ID="{518EDDC7-4CEC-487C-BECA-CC800E331203}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MakeRainLight" ID="{ACB0849B-C85F-4A27-9A11-454AEB509FE9}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
