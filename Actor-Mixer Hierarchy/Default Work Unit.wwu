@@ -972,7 +972,7 @@
 							<ObjectRef Name="Filtre_Lum_Eteinte" ID="{A8EE48FB-A01B-403F-AB31-12C3DF4141FB}" WorkUnitID="{82666964-D833-4E5F-B6CD-37529CD8B1AB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Ambiance" ID="{23C0C82E-173F-4169-BBB7-D3B20F826B03}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
