@@ -12,6 +12,9 @@
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="State_Pluie" ID="{D11C7B8A-C275-4BC9-9A9D-C9D8D3791513}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="9"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{6CBAE09E-3C43-4391-81AF-BAFB3E3AF200}"/>
 						<State Name="Light" ID="{25097902-363C-49DC-A704-0621A6C3D237}"/>

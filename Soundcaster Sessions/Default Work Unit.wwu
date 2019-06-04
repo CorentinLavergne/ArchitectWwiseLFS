@@ -69,7 +69,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Distance_Cascade" ID="{AFBE5539-FE96-40CF-85E3-A3CD6177E70D}"/>
-							<Value>1.14658389713436</Value>
+							<Value>1.92</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SideChainRTPCCascade" ID="{3D3376B3-744C-4282-98AF-5DA6DCC3E8F9}"/>
@@ -121,7 +121,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Elevator_RTPC" ID="{B716C71B-DE2A-4CED-B579-2EDD9F8DC4B4}"/>
-							<Value>0</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
@@ -129,7 +129,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Table" ID="{8B3226E5-71E2-4DA3-BC85-DBD7FBCA96AE}"/>
-							<Value>-1</Value>
+							<Value>1.21905775468898E-311</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
@@ -137,8 +137,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Menu" ID="{4EFF9350-615A-44FF-8F5A-F25376F47269}"/>
-						<CurrentStateRef Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}"/>
+						<CurrentStateRef Name="Level1" ID="{E75DEF89-F41D-40EF-842B-46913642669B}"/>
+						<CurrentStateRef Name="Light" ID="{25097902-363C-49DC-A704-0621A6C3D237}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Step0_Bottom" ID="{FD2EBBFB-E165-4554-8A29-817EF85B3A20}"/>

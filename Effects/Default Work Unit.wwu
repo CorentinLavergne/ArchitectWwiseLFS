@@ -54,6 +54,14 @@
 	<GameParameter Name="RTPCMusic_Rain" ID="{69A19E67-16A0-492B-9BD1-07B3C7900B92}"/>
 </PluginData>
 				</Effect>
+				<Effect Name="Comp_MusicLevel1" ID="{FF4F759D-3E4F-4349-8981-4E0FCE2013DD}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="0.38"/>
+						<Property Name="Ratio" Type="Real32" Value="20.1"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="2"/>
+						<Property Name="Threshold" Type="Real32" Value="-31.4"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
