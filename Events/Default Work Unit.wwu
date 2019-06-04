@@ -25,17 +25,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Lumiere_Gresille" ID="{E7BAFE23-37A1-4493-96DB-9337DC24A21B}">
-					<ChildrenList>
-						<Action Name="" ID="{5F32C258-67F3-4869-A4F5-092781A1983F}" ShortID="649203609">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="LUMIERE GRESILLE" ID="{CB269818-EEAC-4164-B48D-9EA890231B89}" WorkUnitID="{041A3398-CF33-49FB-A3B6-817B21D08398}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Lumiere_Allume" ID="{A819110F-9FE9-4DD4-9F1C-BD0C1617CFB2}">
 					<ChildrenList>
 						<Action Name="" ID="{263D4E98-7581-4DB5-A878-6535FFD843F4}" ShortID="934926911">

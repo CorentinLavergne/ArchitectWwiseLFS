@@ -12,7 +12,6 @@
 						<ObjectRef Name="Play_Ascenseur" ID="{5775C340-AB44-424A-B19C-FABE6BA71F90}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Music" ID="{252E95FD-591F-43C5-85D7-98F0FC89613D}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Lumiere_Eteint" ID="{9F25C3BE-4006-4413-9CFB-3E5537AECE30}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Lumiere_Gresille" ID="{E7BAFE23-37A1-4493-96DB-9337DC24A21B}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Tp_Module" ID="{468D2C72-33A9-453C-B626-07358478DE09}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Poser_Module" ID="{32778B5D-E0B0-461D-BC51-14BCA9132666}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Table" ID="{98DA3983-833A-4687-907A-FE9EAA9150B9}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>

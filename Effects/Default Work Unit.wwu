@@ -33,7 +33,7 @@
 				</Effect>
 				<Effect Name="New_Wwise_Recorder" ID="{885D4A18-4BEC-478F-BBA4-1EF8DABC9F48}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
 					<PropertyList>
-						<Property Name="AuthoringFilename" Type="string" Value="C:\Users\corentin.lavergne\Music\MoodArchitect.wav"/>
+						<Property Name="AuthoringFilename" Type="string" Value="C:\Users\corentin.lavergne\Music\RainMood.wav"/>
 					</PropertyList>
 				</Effect>
 				<Effect Name="EQ_Elevator" ID="{D355FCD2-B93A-4257-9CB9-A4D027055559}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
