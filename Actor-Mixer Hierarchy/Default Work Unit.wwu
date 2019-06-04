@@ -233,7 +233,7 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="68"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>6</Value>
@@ -377,7 +377,7 @@
 																		<SegmentShape>SCurve</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>1.25</XPos>
+																		<XPos>1.43601</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																		<SegmentShape>Log2</SegmentShape>
@@ -465,7 +465,7 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>0.205110656786149</RightEdgePos>
+														<RightEdgePos>0.235003895220313</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 													</CrossfadingInfo>
@@ -473,10 +473,10 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="CASCADE-002" ID="{390BCD00-44ED-48C6-834B-9465BFED31FF}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>5.79588228457116E-02</LeftEdgePos>
+														<LeftEdgePos>6.08057979346795E-02</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-														<RightEdgePos>0.385772812105409</RightEdgePos>
+														<RightEdgePos>0.521004128831388</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 													</CrossfadingInfo>
@@ -484,7 +484,7 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="CASCADE-001" ID="{C2EFC8CC-CA0C-4736-A833-9AAD3FDA37F4}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>0.225444565526673</LeftEdgePos>
+														<LeftEdgePos>0.298042430295356</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
 														<RightEdgePos>2</RightEdgePos>
@@ -495,52 +495,6 @@
 										</BlendTrack>
 									</BlendTrackList>
 								</BlendContainer>
-							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="Chemin" ID="{4C7CD1EC-1174-4A5B-9C82-9D7E7E17F05D}" ShortID="654506614">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="CHEMIN LUMIERE" ID="{D842368A-3AED-4FB8-B3B1-B2DEBA03BF82}" ShortID="339589019">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71AC4C23-BEE2-4A8D-A6B3-7B48275E3251}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="CHEMIN LUMIERE" ID="{BBE66E98-0924-461D-872F-7AC4BA3E59DB}" ShortID="226267322">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="2.66453525910038E-12"/>
-												<Property Name="LoopBegin" Type="Real64" Value="4.41487068965517"/>
-												<Property Name="LoopEnd" Type="Real64" Value="16.2672413793103"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="4.39655172413793"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>CHEMIN LUMIERE .wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="CHEMIN LUMIERE" ID="{BBE66E98-0924-461D-872F-7AC4BA3E59DB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Ambient" ID="{FD60B014-2158-4344-9354-BB35CEF8792C}" ShortID="880273301">
@@ -720,7 +674,11 @@
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Strong" ID="{9E4A1CCB-9710-4BE6-B64C-6CFE08A5019E}"/>
-														<CustomState Name="" ID="{3E3116DD-FAA4-4CE4-91D4-110ECF6A42B0}" ShortID="873953601"/>
+														<CustomState Name="" ID="{3E3116DD-FAA4-4CE4-91D4-110ECF6A42B0}" ShortID="873953601">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-1"/>
+															</PropertyList>
+														</CustomState>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -996,7 +954,15 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Plante" ID="{42DB08D0-1B25-4E29-B698-D94158560C2C}" ShortID="364100659">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="64"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Plante_Attenuation" ID="{C45CDBE2-487E-4256-A626-7EFCB03F7641}" WorkUnitID="{88FA0E69-E7A0-474B-8E6F-09D5A4811D10}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F968CDA9-1CC0-4B2D-85BA-7D7BF16623E1}"/>
 								</Reference>
@@ -1382,16 +1348,22 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>4</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="58"/>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>5</Value>

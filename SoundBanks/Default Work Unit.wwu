@@ -22,7 +22,6 @@
 						<ObjectRef Name="Play_Pluie_Toit" ID="{ACA39ABD-9A3D-4B64-B607-9EAC92DF5343}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ville" ID="{50865FFF-B5A7-4CAE-B709-E3DD9BFDE06B}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Lumiere_Allume" ID="{A819110F-9FE9-4DD4-9F1C-BD0C1617CFB2}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Chemin_Lumiere" ID="{E90724CD-D049-4F49-9CBE-0CA7C7E3CDB2}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Wrong" ID="{F7848A90-B50F-4FA6-AE65-5CC720D320C1}" WorkUnitID="{11B6BA53-EB6B-4B33-93AF-D0F4A7C10CB6}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
